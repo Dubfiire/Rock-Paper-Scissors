@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="choices">
-        <h1 class="header">Rock Paper Scissors</h1>
-        <button onclick="playGame('rock')">Rock</button>
-        <button onclick="playGame('paper')">Paper</button>
-        <button onclick="playGame('scissors')">Scissors</button>
-    <section>
-        <p class="playerscore">Player: 0</p>
-        <p class="aiscore">Ai: 0</p>
-        <p class="finalresult">Its a tie</p>
+      <h1 class="header">Rock Paper Scissors</h1>
+      <button onclick="playGame('Rock')">Rock</button>
+      <button onclick="playGame('Paper')">Paper</button>
+      <button onclick="playGame('Scissors')">Scissors</button>
+    </nav>
+    <section class="scoredisplay">
+      <p class="playerDisplay">Player: 0</p>
+      <p class="aiDisplay">Ai: 0</p>
+      <p class="finalresult"></p>
     </section>
-    <footer>
-        
+    <footer class="winnerdeclare">
+        <h2></h2>
     </footer>
     <script src="client.js"></script>
-
-    
-</body>
+  </body>
 </html>

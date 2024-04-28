@@ -2,3 +2,13 @@
     display: block;
     text-align: center;
 }
+.scoredisplay{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.winnerdeclare{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
