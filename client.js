@@ -3,10 +3,12 @@ const playerDisplay = document.querySelector(".playerDisplay");
 const aiDisplay = document.querySelector(".aiDisplay");
 const resultDisplay = document.querySelector(".finalresult");
 const winnerDeclare = document.querySelector(".winnerdeclare h2");
+const winorLoseDeclare = document.getElementById(".win/lose");
 let playerscore = 0;
 let aiscore = 0;
 
 function playGame(playerChoice) {
+  winnerDeclare.textContent = "";
   if (!choices.includes(playerChoice)) {
     alert("Invalid choice. Please choose Rock, Paper, or Scissors.");
     return;
@@ -36,20 +38,16 @@ function playGame(playerChoice) {
   } else if (result.startsWith("You lose")) {
     aiscore++;
   }
-    
-    
-    
-    
-  if (playerscore === 5) {
-      winnerDeclare.textContent = "You win the Game";
-      playerscore = 0;
-      aiscore = 0;
-  } else if (aiscore === 5) {
-      winnerDeclare.textContent = "Ai win the Game";
-      playerscore = 0;
-      aiscore = 0;
-  }
 
+  if (playerscore === 5) {
+    winnerDeclare.textContent = "You win the Game";
+    playerscore = 0;
+    aiscore = 0;
+  } else if (aiscore === 5) {
+    winnerDeclare.textContent = "Ai win the Game";
+    playerscore = 0;
+    aiscore = 0;
+  }
   playerDisplay.textContent = `Your score: ${playerscore}`;
   aiDisplay.textContent = `AI score: ${aiscore}`;
   resultDisplay.textContent = result;
