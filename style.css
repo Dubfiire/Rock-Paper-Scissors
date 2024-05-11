@@ -1,14 +1,47 @@
-.choices{
-    display: block;
-    text-align: center;
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.scoredisplay{
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+.header {
+  font-weight: 400;
+  font-style: normal;
+  color: #0ff9c2;
 }
-.winnerdeclare{
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
+.choices {
+  margin-bottom: 1rem;
+}
+.choices button {
+  font-size: 7.5rem;
+  margin: 0 2rem;
+  background-color: #6ad6fb;
+  border-radius: 25px;
+  border-color: black;
+  border: 50px;
+}
+.scoredisplay {
+  font-size: 2rem;
+  gap: 2rem;
+  color: #4ca8fa;
+}
+.winnerdeclare {
+  font-size: 2rem;
+  color: #4ca8fa;
 }

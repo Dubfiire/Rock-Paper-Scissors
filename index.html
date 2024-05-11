@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <h1 class="header">Rock Paper Scissors</h1>
     <nav class="choices">
-      <h1 class="header">Rock Paper Scissors</h1>
-      <button onclick="playGame('Rock')">Rock</button>
-      <button onclick="playGame('Paper')">Paper</button>
-      <button onclick="playGame('Scissors')">Scissors</button>
+      <button onclick="playGame('Rock')">👊</button>
+      <button onclick="playGame('Paper')">🗞️</button>
+      <button onclick="playGame('Scissors')">✂️</button>
     </nav>
     <section class="scoredisplay">
       <p class="playerDisplay">Player: 0</p>
@@ -19,7 +25,7 @@
       <p class="finalresult"></p>
     </section>
     <footer class="winnerdeclare">
-        <h2 id="win/lose"></h2>
+      <h2 id="win/lose"></h2>
     </footer>
     <script src="client.js"></script>
   </body>
